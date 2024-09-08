@@ -110,9 +110,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \foilhead{\Large 3. プログラム概要}
+Rustでブラウザに搭載されているAPIにアクセスするプログラムを記述し、そのプログラムをWebAssemblyにコンパイルする。コンパイルされたプログラムをJavaScriptでロードし、実行させる
 
-
-ここにブロック図をいれシステム全体を解説する．ドローンや車両などを開発した場合は，その写真も示す．
+ここにブロック図をいれる
 %% \begin{figure}[h]
 %% \begin{center}
 %% \includegraphics[width=\textwidth]{fig/system.pdf}
@@ -124,12 +124,13 @@
 %%%%%%%%%%%%%%% minipage の利用例 %%%%%%%%%%%%%%%%%%%
 %------ 左側
 \begin{minipage}[t]{0.4\textwidth}\vspace{0pt}
-あああああああああああああああああああああああああああああああああああああああああああああああああああああああああいゆえお．
-\begin{itemize}[parsep=-0.5\zh]
-	\item いいいいいいいいいいいいいいいいい
-	\item うううううううううううううううううう
-	\item えええええええええええええええええええええええええ
-\end{itemize}
+本プロジェクトでは、2つのプログラミング言語を用いて高速化を行う
+
+\begin{enumerate}[parsep=-0.5\zh]
+	\item Rust言語のプログラムでグラフィクスを操作するAPIをコール
+	\item Rustで記述したプログラムをWebAssemblyにコンパイルする
+	\item WebAssemblyプログラムをJavaScript側からコールする
+\end{enumerate}
 \end{minipage}
 %------ 右側
 \begin{minipage}[t]{0.6\textwidth}\vspace{0pt}
@@ -139,13 +140,18 @@
 \end{minipage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\foilhead{\Large 3-1. 畳み込みニューラルネットワークの構造}
+\foilhead{\Large 3-1. 作成したWebAssemblyプログラムの概要}
 \begin{description}
-	\item[①入力層]~\\
-	ああああああああああああああああああああああいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいうううううううううううううううう
-	\item[②中間層]~\\
-	ああああああああああああああああああああああいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいうううううううううううううううう
-	\item[③出力層]~\\
+	\item[引数]~\\
+	\begin{itemize}
+		\item ブラウザを経由して受け取ったGPUの総合的なデータ(GPU型の値)
+		\item ブラウザを経由して受け取ったGPU装置のデータ(GPUDevice型の値)
+		\item ブラウザが対応しているWebGPU上でレンダリングを行うにあたって利用するフォーマット(GPUTextureFormat型の値)
+	\end{itemize}
+	\newpage
+	\item[処理内容]~\\
+	WebGPU APIを通してレンダリング内容を決め、実行する内容をバッファとして処理し、順番に実行させる一連の処理を行う
+	\item[実行される処理の結果]~\\
 	あああああああ\textcolor{red}{ああああああああ}あああああ
 	\begin{enumerate}
 		\item 巧言令色，鮮なし仁
