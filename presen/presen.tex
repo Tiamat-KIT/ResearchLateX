@@ -41,7 +41,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\cfoot{\thepage/\pageref{LastPage}} 
 \cfoot{\thepage/\pageref{LastPage}}
-\rfoot{\small 1EP999} % テーマ番号
+\rfoot{\small 4EP404} % テーマ番号
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ページ番号を1からにしたら，トップスライドの下部のロゴがうまくいかなくなったのでこうしてみた
@@ -67,7 +67,7 @@
 }
 \date{令和99年99月99日}
 \author{
-4EP5-04\\ \ruby{天羽}{あもう}\ruby{大樹}{たいき}
+4EP4-04\\ \ruby{天羽}{あもう}\ruby{大樹}{たいき}
 }
 
 
@@ -112,7 +112,6 @@
 \foilhead{\Large 3. プログラム概要}
 Rustでブラウザに搭載されているAPIにアクセスするプログラムを記述し、そのプログラムをWebAssemblyにコンパイルする。コンパイルされたプログラムをJavaScriptでロードし、実行させる
 
-ここにブロック図をいれる
 %% \begin{figure}[h]
 %% \begin{center}
 %% \includegraphics[width=\textwidth]{fig/system.pdf}
@@ -124,18 +123,18 @@ Rustでブラウザに搭載されているAPIにアクセスするプログラ�
 %%%%%%%%%%%%%%% minipage の利用例 %%%%%%%%%%%%%%%%%%%
 %------ 左側
 \begin{minipage}[t]{0.4\textwidth}\vspace{0pt}
-本プロジェクトでは、2つのプログラミング言語を用いて高速化を行う
+本プロジェクトでは、2つの\\プログラミング言語を用いて\\高速化を行う
 
 \begin{enumerate}[parsep=-0.5\zh]
-	\item Rust言語のプログラムでグラフィクスを操作するAPIをコール
-	\item Rustで記述したプログラムをWebAssemblyにコンパイルする
-	\item WebAssemblyプログラムをJavaScript側からコールする
+	\item Rustのプログラムで\\グラフィクスを操作するAPIをコール
+	\item Rustのプログラムを\\WebAssemblyに\\コンパイルする
+	\item WebAssemblyプログラムをJavaScript側から\\コールする
 \end{enumerate}
 \end{minipage}
 %------ 右側
 \begin{minipage}[t]{0.6\textwidth}\vspace{0pt}
 \begin{center}
-\includegraphics[keepaspectratio, width=.9\linewidth,trim={100mm 0mm 0mm 15mm},clip]{fig/system.pdf}
+\includegraphics[keepaspectratio, width=.9\linewidth,trim={0mm 0mm 0mm 0mm},clip]{fig/system.pdf}
 \end{center}
 \end{minipage}
 
@@ -144,19 +143,16 @@ Rustでブラウザに搭載されているAPIにアクセスするプログラ�
 \begin{description}
 	\item[引数]~\\
 	\begin{itemize}
-		\item ブラウザを経由して受け取ったGPUの総合的なデータ(GPU型の値)
-		\item ブラウザを経由して受け取ったGPU装置のデータ(GPUDevice型の値)
-		\item ブラウザが対応しているWebGPU上でレンダリングを行うにあたって利用するフォーマット(GPUTextureFormat型の値)
+		\item ブラウザを経由して受け取ったGPUの総合的なデータ\\(GPU型の値)
+		\item ブラウザを経由して受け取ったGPU装置のデータ\\(GPUDevice型の値)
+		\item ブラウザが対応しているWebGPU上でレンダリングを行うに\\あたって利用するフォーマット(GPUTextureFormat型の値)
 	\end{itemize}
 	\newpage
 	\item[処理内容]~\\
 	WebGPU APIを通してレンダリング内容を決め、実行する内容をバッファとして処理し、順番に実行させる一連の処理を行う
 	\item[実行される処理の結果]~\\
-	あああああああ\textcolor{red}{ああああああああ}あああああ
-	\begin{enumerate}
-		\item 巧言令色，鮮なし仁
-		\item 後生畏可し，焉んぞ来者の今に，如かざるを知らんや．
-	\end{enumerate}
+	HTMLのcanvas要素の範囲にプログラムで指定した\\矩形や図形がレンダリングされる
+
 \end{description}
 \newpage
 

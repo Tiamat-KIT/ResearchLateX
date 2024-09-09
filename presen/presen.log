@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.9.7)  8 SEP 2024 17:16
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.9.7)  9 SEP 2024 19:48
  restricted system commands enabled.
 **presen.tex
 (./presen.tex
@@ -1694,119 +1694,92 @@ Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 112.
  [5]
 File: fig/logo/kit_landscape1.pdf Graphic file (type pdf)
 <use fig/logo/kit_landscape1.pdf>
-Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 122.
+Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 121.
 (luatex.def)             Requested size: 209.42903pt x 21.33955pt.
  [6]
-Underfull \hbox (badness 4608) in paragraph at lines 130--131
-[]\TU/HaranoAjiGothic-Light(0)/m/n/24.88 Rust |\JY3/HaranoAjiGothic-Light(1)/m/
-n/24.88 言 |語 |の |プ |ロ |グ |ラ |ム |で
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
-|\JY3/HaranoAjiGothic-Light(1)/m/n/24.88 グ |ラ |フ |ィ |ク |ス |を |
-操 |作 |す |る
- []
-
-
-Underfull \hbox (badness 4608) in paragraph at lines 131--132
-[]\TU/HaranoAjiGothic-Light(0)/m/n/24.88 Rust |\JY3/HaranoAjiGothic-Light(1)/m/
-n/24.88 で |記 |述 |し |た |プ |ロ |グ |ラ
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
-|\JY3/HaranoAjiGothic-Light(1)/m/n/24.88 を \TU/HaranoAjiGothic-Light(0)/m/n/2
-4.88 JavaScript |\JY3/HaranoAjiGothic-Light(1)/m/n/24.88 側 |か |ら |コ |
-ー
- []
-
-
-warning  (file fig/system.pdf) (pdf inclusion): PDF inclusion: found PDF version
- '1.7', but at most version '1.5' allowed
-<fig/system.pdf, id=54, 392.11896pt x 139.53531pt>
+<fig/system.pdf, id=54, 469.755pt x 334.24875pt>
 File: fig/system.pdf Graphic file (type pdf)
 <use fig/system.pdf>
-Package luatex.def Info: fig/system.pdf  used on input line 138.
-(luatex.def)             Requested size: 445.57167pt x 401.22pt.
+Package luatex.def Info: fig/system.pdf  used on input line 137.
+(luatex.def)             Requested size: 445.57167pt x 317.03978pt.
 
-Overfull \hbox (3.66563pt too wide) in paragraph at lines 126--141
+Overfull \hbox (3.66563pt too wide) in paragraph at lines 125--140
 [][] [] 
  []
 
 File: fig/logo/kit_landscape1.pdf Graphic file (type pdf)
 <use fig/logo/kit_landscape1.pdf>
-Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 143.
+Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 142.
 (luatex.def)             Requested size: 209.42903pt x 21.33955pt.
 [7<./fig/system.pdf>]
 File: fig/logo/kit_landscape1.pdf Graphic file (type pdf)
 <use fig/logo/kit_landscape1.pdf>
-Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 151.
+Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 150.
 (luatex.def)             Requested size: 209.42903pt x 21.33955pt.
  [8]
 File: fig/logo/kit_landscape1.pdf Graphic file (type pdf)
 <use fig/logo/kit_landscape1.pdf>
-Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 161.
+Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 157.
 (luatex.def)             Requested size: 209.42903pt x 21.33955pt.
  [9]
 File: fig/logo/kit_landscape1.pdf Graphic file (type pdf)
 <use fig/logo/kit_landscape1.pdf>
-Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 172.
+Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 168.
 (luatex.def)             Requested size: 209.42903pt x 21.33955pt.
  [10]
 File: fig/logo/kit_landscape1.pdf Graphic file (type pdf)
 <use fig/logo/kit_landscape1.pdf>
-Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 173.
+Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 169.
 (luatex.def)             Requested size: 209.42903pt x 21.33955pt.
  [11]
 File: fig/logo/kit_landscape1.pdf Graphic file (type pdf)
 <use fig/logo/kit_landscape1.pdf>
-Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 184.
+Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 180.
 (luatex.def)             Requested size: 209.42903pt x 21.33955pt.
  [12]
 File: fig/logo/kit_landscape1.pdf Graphic file (type pdf)
 <use fig/logo/kit_landscape1.pdf>
-Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 193.
+Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 189.
 (luatex.def)             Requested size: 209.42903pt x 21.33955pt.
  [13]
 
 LaTeX Font Warning: Font shape `JT3/HaranoAjiGothic-Light(1)/solid/n' undefined
 
 (Font)              using `JT3/HaranoAjiGothic-Light(1)/m/n' instead on input l
-ine 201.
+ine 197.
 
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Light(1)/m/n' will be
-(Font)              scaled to size 23.94002pt on input line 201.
+(Font)              scaled to size 23.94002pt on input line 197.
 
 LaTeX Font Warning: Font shape `JY3/HaranoAjiGothic-Light(1)/solid/n' undefined
 
 (Font)              using `JY3/HaranoAjiGothic-Light(1)/m/n' instead on input l
-ine 201.
+ine 197.
 
 
 LaTeX Font Warning: Font shape `JT3/HaranoAjiGothic-Light(1)/regular/n' undefin
 ed
 (Font)              using `JT3/HaranoAjiGothic-Light(1)/m/n' instead on input l
-ine 201.
+ine 197.
 
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Light(1)/m/n' will be
-(Font)              scaled to size 23.94002pt on input line 201.
+(Font)              scaled to size 23.94002pt on input line 197.
 
 LaTeX Font Warning: Font shape `JY3/HaranoAjiGothic-Light(1)/regular/n' undefin
 ed
 (Font)              using `JY3/HaranoAjiGothic-Light(1)/m/n' instead on input l
-ine 201.
+ine 197.
 
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Light(1)/solid/n' will be
-(Font)              scaled to size 23.94002pt on input line 203.
+(Font)              scaled to size 23.94002pt on input line 199.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Light(1)/solid/n' will be
-(Font)              scaled to size 23.94002pt on input line 203.
+(Font)              scaled to size 23.94002pt on input line 199.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Light(1)/regular/n' will be
 
-(Font)              scaled to size 23.94002pt on input line 203.
+(Font)              scaled to size 23.94002pt on input line 199.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Light(1)/regular/n' will be
 
-(Font)              scaled to size 23.94002pt on input line 203.
+(Font)              scaled to size 23.94002pt on input line 199.
 luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate. ("C:/
 Program Files/MiKTeX/tex/latex/listings/lstlang1.sty"
 File: lstlang1.sty 2023/02/27 1.9 listings language file
@@ -1815,7 +1788,7 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 205.
+nput line 201.
 luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
 Removing  `ltj.process_input_buffer' from `process_input_buffer'.
 Inserting `ltj.listings_unicode' in `process_input_buffer'.
@@ -1832,45 +1805,45 @@ Inserting `ltj.listings_unicode' in `process_input_buffer'.
 Inserting `ltj.process_input_buffer' in `process_input_buffer'. (./src/world.py
 )
 Removing  `ltj.listings_unicode' from `process_input_buffer'.
-Overfull \hbox (20.0pt too wide) in paragraph at lines 216--217
+Overfull \hbox (20.0pt too wide) in paragraph at lines 212--213
 [][][][][][][] 
  []
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 224--225
+Overfull \hbox (20.0pt too wide) in paragraph at lines 220--221
 [][][][][][][] 
  []
 
 File: fig/logo/kit_landscape1.pdf Graphic file (type pdf)
 <use fig/logo/kit_landscape1.pdf>
-Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 229.
+Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 225.
 (luatex.def)             Requested size: 209.42903pt x 21.33955pt.
 [15]
-Overfull \hbox (20.0pt too wide) in paragraph at lines 229--231
+Overfull \hbox (20.0pt too wide) in paragraph at lines 225--227
 [][][][][][][] 
  []
 
 File: fig/logo/kit_landscape1.pdf Graphic file (type pdf)
 <use fig/logo/kit_landscape1.pdf>
-Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 239.
+Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 235.
 (luatex.def)             Requested size: 209.42903pt x 21.33955pt.
 [16]
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Light(1)/bx/n' will be
-(Font)              scaled to size 19.95642pt on input line 246.
+(Font)              scaled to size 19.95642pt on input line 242.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Light(1)/bx/n' will be
-(Font)              scaled to size 19.95642pt on input line 246.
+(Font)              scaled to size 19.95642pt on input line 242.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Light(1)/m/n' will be
-(Font)              scaled to size 19.95642pt on input line 248.
+(Font)              scaled to size 19.95642pt on input line 244.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Light(1)/m/n' will be
-(Font)              scaled to size 11.64285pt on input line 248.
+(Font)              scaled to size 11.64285pt on input line 244.
 File: fig/logo/kit_landscape1.pdf Graphic file (type pdf)
 <use fig/logo/kit_landscape1.pdf>
-Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 254.
+Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 250.
 (luatex.def)             Requested size: 209.42903pt x 21.33955pt.
  [17]
 File: fig/logo/kit_landscape1.pdf Graphic file (type pdf)
 <use fig/logo/kit_landscape1.pdf>
-Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 260.
+Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 256.
 (luatex.def)             Requested size: 209.42903pt x 21.33955pt.
  [18] 
 enddocument/afterlastpage: lastpage setting LastPage.
@@ -1890,7 +1863,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 )
 
 Here is how much of LuaTeX's memory you used:
- 33466 strings out of 476497
+ 33464 strings out of 476497
  156564,1977958 words of node,token memory allocated
  975 words of node memory still in use:
    7 hlist, 1 vlist, 4 rule, 2 glue, 3 kern, 1 glyph, 181 attribute, 59 glue_spe
@@ -1909,9 +1882,9 @@ ic/haranoaji/HaranoAjiGothic-Medium.otf><C:/Users/taito/AppData/Roaming/MiKTeX/f
 onts/type1/public/ascmac/ascgrp.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/latx
 font/lcircle1.pfb>
-Output written on presen.pdf (18 pages, 272537 bytes).
+Output written on presen.pdf (18 pages, 224230 bytes).
 
-PDF statistics: 239 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 131072)
+PDF statistics: 262 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 131072)
  26 words of extra memory for PDF output out of 10000 (max. 100000000)
 
