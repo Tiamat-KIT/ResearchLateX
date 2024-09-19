@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.9.7)  19 SEP 2024 15:45
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.9.7)  19 SEP 2024 15:57
  restricted system commands enabled.
 **presen.tex
 (./presen.tex
@@ -1735,40 +1735,40 @@ Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 189.
 <normal_triangle.png, id=143, 585.68813pt x 223.33438pt>
 File: normal_triangle.png Graphic file (type png)
 <use normal_triangle.png>
-Package luatex.def Info: normal_triangle.png  used on input line 197.
+Package luatex.def Info: normal_triangle.png  used on input line 198.
 (luatex.def)             Requested size: 363.8839pt x 138.76236pt.
 <colorful_triangle.png, id=144, 582.67688pt x 227.34938pt>
 File: colorful_triangle.png Graphic file (type png)
 <use colorful_triangle.png>
-Package luatex.def Info: colorful_triangle.png  used on input line 202.
+Package luatex.def Info: colorful_triangle.png  used on input line 203.
 (luatex.def)             Requested size: 363.8839pt x 141.982pt.
 File: fig/logo/kit_landscape1.pdf Graphic file (type pdf)
 <use fig/logo/kit_landscape1.pdf>
-Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 206.
+Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 207.
 (luatex.def)             Requested size: 209.42903pt x 21.33955pt.
  [12<./normal_triangle.png><./colorful_triangle.png>]
 File: fig/logo/kit_landscape1.pdf Graphic file (type pdf)
 <use fig/logo/kit_landscape1.pdf>
-Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 217.
+Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 218.
 (luatex.def)             Requested size: 209.42903pt x 21.33955pt.
  [13]
 File: fig/logo/kit_landscape1.pdf Graphic file (type pdf)
 <use fig/logo/kit_landscape1.pdf>
-Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 226.
+Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 227.
 (luatex.def)             Requested size: 209.42903pt x 21.33955pt.
  [14]
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Light(1)/bx/n' will be
-(Font)              scaled to size 19.95642pt on input line 232.
+(Font)              scaled to size 19.95642pt on input line 233.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Light(1)/bx/n' will be
-(Font)              scaled to size 19.95642pt on input line 232.
+(Font)              scaled to size 19.95642pt on input line 233.
 luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Light(1)/m/n' will be
-(Font)              scaled to size 19.95642pt on input line 234.
+(Font)              scaled to size 19.95642pt on input line 235.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Light(1)/m/n' will be
-(Font)              scaled to size 11.64285pt on input line 234.
+(Font)              scaled to size 11.64285pt on input line 235.
 File: fig/logo/kit_landscape1.pdf Graphic file (type pdf)
 <use fig/logo/kit_landscape1.pdf>
-Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 246.
+Package luatex.def Info: fig/logo/kit_landscape1.pdf  used on input line 247.
 (luatex.def)             Requested size: 209.42903pt x 21.33955pt.
  [15]
 
@@ -1791,7 +1791,7 @@ Here is how much of LuaTeX's memory you used:
  975 words of node memory still in use:
    7 hlist, 1 vlist, 4 rule, 2 glue, 3 kern, 1 glyph, 181 attribute, 59 glue_spe
 c, 24 attribute_list, 2 write, 9 user_defined, 3 pdf_action nodes
-   avail lists: 1:19,2:17165,3:342,4:206,5:186,6:30,7:2504,8:111,9:664,10:19,11:
+   avail lists: 1:18,2:17165,3:342,4:206,5:186,6:30,7:2504,8:111,9:664,10:19,11:
 12
  54311 multiletter control sequences out of 65536+600000
  123 fonts using 253246967 bytes
@@ -1800,7 +1800,7 @@ c, 24 attribute_list, 2 write, 9 user_defined, 3 pdf_action nodes
 haranoaji-extra/HaranoAjiGothic-Light.otf><C:/Users/taito/AppData/Roaming/MiKTeX
 /fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><C:/Program Files/Mi
 KTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on presen.pdf (15 pages, 319080 bytes).
+Output written on presen.pdf (15 pages, 320908 bytes).
 
 PDF statistics: 212 PDF objects out of 1000 (max. 8388607)
  42 named destinations out of 1000 (max. 131072)

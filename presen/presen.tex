@@ -65,7 +65,7 @@
 {\normalsize 令和98年度 プロジェクトデザインIII}\\\vspace{10mm}
 {\LARGE WebAssemblyを用いた\\グラフィクスレンダリングの高速化}
 }
-\date{令和99年99月99日}
+\date{令和6年09月25日}
 \author{
 4EP4-04\\ \ruby{天羽}{あもう}\ruby{大樹}{たいき}
 }
@@ -185,11 +185,12 @@ WebAssembly側で処理するプログラムの対象として、
 \begin{description}
 	
 	\item[評価方法]~\\
-	JavaScriptのみで組んだ関数と、WebAssemblyを交えたプログラムを同時に実行して、その2つの関数の実行が終了するまでの時間を計測し、比較を行う
+	JavaScriptのみで組んだ関数と、WebAssemblyを交えたプログラムを同時に実行して、その2つの関数の実行が終了するまでの時間をJavaScriptのperformance.now関数で、実行を終了した時間から実行を開始した時間を減算することで計測し、実行速度の比較を行う
 	\newpage
 	
 	\item[評価結果]~\\
 	今回の比較では、以下の結果が出た。このケースではそれほど大きな差が出なかった。\\
+	また、今回は単一の図形のレンダリングのみなので、映像ではなく画像でレンダリング時の画面を掲示する。
 	\begin{figure}[h]
 		\centering
 		\begin{minipage}[b]{0.49\columnwidth}
