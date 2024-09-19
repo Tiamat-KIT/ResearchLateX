@@ -187,8 +187,23 @@ WebAssembly側で処理するプログラムの対象として、
 	\item[評価方法]~\\
 	JavaScriptのみで組んだ関数と、WebAssemblyを交えたプログラムを同時に実行して、その2つの関数の実行が終了するまでの時間を計測し、比較を行う
 	\newpage
+	
 	\item[評価結果]~\\
-	今回の比較では、以下の結果が出た。このケースではそれほど大きな差が出なかった。
+	今回の比較では、以下の結果が出た。このケースではそれほど大きな差が出なかった。\\
+	\begin{figure}[h]
+		\centering
+		\begin{minipage}[b]{0.49\columnwidth}
+			\centering
+			\includegraphics[width=0.9\columnwidth]{normal_triangle.png}
+			\label{fig:a}
+		\end{minipage}
+		\begin{minipage}[b]{0.49\columnwidth}
+			\centering
+			\includegraphics[width=0.9\columnwidth]{colorful_triangle.png}
+			\label{fig:b}
+		\end{minipage}
+	\end{figure}
+	\newpage
 	\item[考察]~\\
 	今回は単純な単色の図形、もしくは三色のグラデーションの図形のみの描画であるため、大きな差にはならなかったと考えられる。しかし、2つの比較で、それぞれ速度差が現れているため、より内部の数値処理を増やすと、より大きな差が生まれる可能性があると考えられる
 	
@@ -210,53 +225,6 @@ WebAssembly側で処理するプログラムの対象として、
 \end{itemize}
 \newpage
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-ここからおまけ
-
-\href{run:./demo002.mp4}{\textcolor[hsb]{0.0, 0.7, 1.0}{\faPlayCircle[regular]}} PDFファイルと同じフォルダにdemo002.mp4があれば再生できる．
-
-
-\href{https://youtu.be/74agBeJxdFI}{\textcolor{red}{\faYoutube}} YOUTUBEで再生
-
-\textcolor{red}{\faYoutube}\href{https://youtu.be/74agBeJxdFI}{~\url{https://youtu.be/74agBeJxdFI}}
-
-\lstinputlisting[language=c, caption=test2.c]{src/hello.c}
-\lstinputlisting[language=python, caption=test2.py]{src/world.py}
-
-% 色定義
-\definecolor{mygray}{gray}{0.95}
-\definecolor{mypink1}{hsb}{0.0, 0.188, 1.0}
-UNIXv1におけるタスク切り替えが行われるタイミング
-
-%%%%%%%%%%%%%%%%%%%%%%%%55
-\colorbox{mygray}{\begin{minipage}{\textwidth}
-① みなさん
-\end{minipage}}
-
-\colorbox{mygray}{\begin{minipage}{\textwidth}
-② こんにちは 
-\begin{itemize}
-\item まんじゅう
-\item りんご
-\end{itemize}
-\end{minipage}}
-
-\colorbox{mypink1}{\begin{minipage}{\textwidth}
-③ お元気で\\
-またあうひまで
-\end{minipage}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{verbatimx}
-$ gcc test.c \return
- (*_*)
- (*_*)
-        \textcolor{red}{ここで\keytop{CTL}+\keytop{C}を押す}
-\end{verbatimx}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-~\\
-\noindent\textbf{謝辞}~~本研究はJSPS科研費21Kxxxxxxxxx助成を受けた
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 参考文献 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{thebibliography}{99}
 \small
