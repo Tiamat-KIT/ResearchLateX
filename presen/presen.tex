@@ -81,7 +81,7 @@
  \foilhead{\Large 1. はじめに -- 背景と目的 -- }
 \begin{itemize}
  \item 将来、Webアプリケーションとして、リアルタイムに変化するxRコンテンツを作成し、動作させる際、グラフィクスレンダリングの速度が遅くなってしまうと、没入感を損なってしまう問題があると考えられる
- \item そのような問題に対処するために、Web上でグラフィクスのレンダリングを早く処理するために、どのような手法を用いれば、より早く処理できるのかという取り組みを行う必要がある
+ \item そのような問題に対処するために、Webブラウザ上でグラフィクスのレンダリングを早く処理するために、どのような手法を用いれば、より早く処理できるのかという取り組みを行う必要がある
  \item 本プロジェクトにおいては、WebAssemblyという仕組みを用いたバイナリフォーマットプログラムを使って、グラフィクスレンダリングを早く処理させるプログラムを作成する
 \end{itemize}
 \newpage
@@ -100,13 +100,22 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \foilhead{\Large 2. 用語の簡潔な説明}
 \begin{itemize}
-	\item WebAssembly\\Web上で動作するバイナリフォーマットプログラムのこと。\\wasmと略して呼称されることが多いため、本スライドでも\\その略称を以後使用する。特定のプログラミング言語で記述した\\プログラムをそのバイナリフォーマットにコンパイルしたものを\\主に指す。そのプログラムを保存したファイルは、\\wasmモジュールと呼称されることが多い。
+	\item WebAssembly\\Webブラウザに搭載されている仮想マシンで\\実行できるバイナリコードとそれを処理するシステム全体\cite{WebAssembly}のこと。\\wasmと略して呼称されることが多いため、本スライドでも\\その略称を以後使用する。特定のプログラミング言語で記述した\\プログラムをそのバイナリコードにコンパイルしたものを\\主に指す。そのプログラムを保存したファイルは、\\wasmモジュールと呼称されることが多い。\\C,C++,Rustなどで記述したプログラムをこのWebAssemblyに\\コンパイルすることで、動作させることが可能になる。\cite{FromCompileLang}
 	\newpage
 	
 	\item WebGL\\Web上でグラフィクスを扱うために、ブラウザに組み込まれているAPI\\後述するWebGPUより歴史が古く関連ライブラリが豊富で、\\Three.jsやBabylon.jsといったライブラリが有名。
 	
 	\item WebGPU\\WebGLより高度にGPUの性能を活かし、高速なグラフィクス\\レンダリングを行うことが可能であるとされている\\ブラウザ組み込みのAPI。まだ公開されてから日が浅いため、\\著名な関連ライブラリなどはまだあまり見受けられない
 \end{itemize}
+\newpage
+
+\foilhead{\Large 2-1. なぜWebAseemblyを扱うのか}
+\begin{description}
+	\item[扱うメリット]~\\
+	WebAssemblyはWebブラウザ上でネイティブコードに近い速度で実行される\cite{WasmLikeNativeSpeed}ため、JavaScriptでは時間がかかるであろう処理をWebAssemblyでの処理に置き替えることによる高速化が望める
+	\item[WebAssemblyが得意とする処理]~\\
+	基本的に、WebAssemblyそのものは、整数・実数の計算しかできない\cite{WasmOnlyCalc}が、WebAssemblyが既にコンパイルされた仮想マシンコードであることを活かし、高速な演算処理を得意とする。	
+\end{description}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \foilhead{\Large 発表の流れ}
@@ -230,16 +239,20 @@ WebAssembly側で処理するプログラムの対象として、
 \begin{thebibliography}{99}
 \small
 \setlength\itemsep{-0.5\zh}%
-\bibitem{book1} K.Thompson，D.M.Ritchie，\textbf{"The UNIX Time-Sharing System"}，Communications of the ACM, Vol.17, No.7, 1974.
-\bibitem{book4} Digital Equipment Corporation: \textbf{PDP11/20-15-r20 Processor Handbook}, 1971.
-\bibitem{Preliminary} T.R. Bashkow, \textbf{"Study of UNIX: Preliminary Release of Unix Implementation Document"}, \url{ http://minnie.tuhs.org/Archive/Distributions/Research/Dennis_v1/PreliminaryUnixImplementationDocument_Jun72.pdf}, Jun. 1972.
+\bibitem{WebAssembly}
+\bibitem{FromCompileLang}
+\bibitem{WasmLikeNativeSpeed}
+\bibitem{WasmOnlyCalc}
+%\bibitem{book1} K.Thompson，D.M.Ritchie，\textbf{"The UNIX Time-Sharing System"}，Communications of the ACM, Vol.17, No.7, 1974.
+%\bibitem{book4} Digital Equipment Corporation: \textbf{PDP11/20-15-r20 Processor Handbook}, 1971.
+%\bibitem{Preliminary} T.R. Bashkow, \textbf{"Study of UNIX: Preliminary Release of Unix Implementation Document"}, \url{ http://minnie.tuhs.org/Archive/Distributions/Research/Dennis_v1/PreliminaryUnixImplementationDocument_Jun72.pdf}, Jun. 1972.
 %\bibitem{book2} K. Thompson，D.M. Ritchie，"UNIX PROGRAMER'S MANUAL"，Nov. 1971.
 %\bibitem{web0} Warren Toomey, "The Unix Heritage Society", \url{https://www.tuhs.org/}, Dec. 2015.
-\bibitem{simh} simh, \textbf{"The Computer History Simulation Project"}, \url{https://github.com/simh/simh}, 参照Mar.14, 2022.
-\bibitem{ref0} W.Toomey, \textbf{"First Edition Unix: Its Creation and Restoration"}, IEEE Annals of the History of Computing, 32 (3), pp.74-82, 2010.
+% \bibitem{simh} simh, \textbf{"The Computer History Simulation Project"}, \url{https://github.com/simh/simh}, 参照Mar.14, 2022.
+% \bibitem{ref0} W.Toomey, \textbf{"First Edition Unix: Its Creation and Restoration"}, IEEE Annals of the History of Computing, 32 (3), pp.74-82, 2010.
 %\bibitem{web1} Jim Huang, "Restoration of 1st Edition UNIX from Bell Laboratories", \url{https://github.com/jserv/unix-v1}, 参照Mar.14, 2022.
-\bibitem{book3} Diomidis.Spinellis，\textbf{"unix-history-repo"},  \url{https://github.com/dspinellis/unix-history-repo/tree/Research-V1}, 参照Mar.14, 2022.
-\bibitem{book5} Digital Equipment Copporation: \textbf{PDP11 Peripherals HandBook}, 1972.
+% \bibitem{book3} Diomidis.Spinellis，\textbf{"unix-history-repo"},  \url{https://github.com/dspinellis/unix-history-repo/tree/Research-V1}, 参照Mar.14, 2022.
+% \bibitem{book5} Digital Equipment Copporation: \textbf{PDP11 Peripherals HandBook}, 1972.
 %\bibitem{book6} \url{https://github.com/No000/unix-v1-utils}
 %\bibitem{book7} \url{https://github.com/No000/UnixV1-SystemCallTracer}
 \end{thebibliography}
