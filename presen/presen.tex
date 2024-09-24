@@ -193,31 +193,86 @@ WebAssembly側で処理するプログラムの対象として、
 \begin{description}
 	
 	\item[評価方法とその手順]~\\
-	\begin{enumerate}[itemsep=0.25\zh]
-		\item JavaScriptのみで組んだ関数と、WebAssemblyを交えたプログラムを同時に実行
-		\item その2つの関数の実行が終了するまでの時間を\\JavaScriptのperformance.now関数で、実行を終了した時間から\\実行を開始した時間を減算することで計測
-	\end{enumerate}
+	次ページの画像のような色の異なる三角形をそれぞれレンダリングする際、JavaScriptのみで組んだ関数と、WebAssemblyを交えたプログラムを同時に実行しその2つの関数の実行が終了するまでの時間を\\JavaScriptのperformanceクラスのメソッドを利用して、\\実行を終了した時間から実行を開始した時間を減算することで計測。\\
+	これを、for文で500回行った実行時間データをCSVデータとし、Python言語を用いて平均値、中央値、最大値、最小値を算出する。
+	また、Pythonライブラリである、\textbf{matplotlib.pyplot}を使用し、箱ひげ図を作成することにより、安定的に高速化が可能かどうかを評価する
 	\newpage
-	
-	\item[評価結果]~\\
-	今回の比較では、以下の結果が出た。このケースではそれほど大きな差が出なかった。\\
-	また、今回は単一の図形のレンダリングのみなので、映像ではなく画像でレンダリング時の画面を掲示する。
 	\begin{figure}[h]
 		\centering
-		\begin{minipage}[b]{0.49\columnwidth}
+		\begin{minipage}[b]{0.38\columnwidth}
 			\centering
 			\includegraphics[width=0.9\columnwidth]{normal_triangle.png}
 			\label{fig:a}
 		\end{minipage}
-		\begin{minipage}[b]{0.49\columnwidth}
+		\begin{minipage}[b]{0.38\columnwidth}
 			\centering
 			\includegraphics[width=0.9\columnwidth]{colorful_triangle.png}
 			\label{fig:b}
 		\end{minipage}
 	\end{figure}
+	\begin{description}
+		\item[比較対象に関する詳細な説明]~\\	
+		比較対象は、描画プログラムを以下のように記述したものである。
+		\begin{itemize}
+			\item 左画像の左側が、JavaScriptのみで記述したもの
+			\item
+			左画像の右側が、JavaScript+Wasmで記述したもの
+			\item
+			右画像の左側が、JavaScriptのみでカラフルな図形を\\レンダリングするように記述したもの
+			\item
+			右画像の右側が、JavaScrpt+Wasmでカラフルな図形を\\レンダリングするように記述したもの
+		\end{itemize}	
+	\end{description}
+	\newpage
+	
+	\item[評価結果]~\\
+	以下の表には、計算した4つの値について記載する。\\
+	時間の単位については全てミリ秒である。
+	
+	\begin{table}
+	\begin{tabular}{|c|c|r|r|r|r|} \hline
+		描画内容&Wasmの有無&平均時間&最小時間&最大時間&時間の中央値\\
+		赤色三角形&無&0.445691&0.1&2.0&0.4\\
+		赤色三角形&有&0.424649&0.1&1.6&0.4\\
+		虹色三角形&無&0.413427&0.1&1.7&0.4\\
+		虹色三角形&有& 0.416232&0.1&1.9&0.4\\ \hline
+	\end{tabular}
+	\end{table}
+	
+	%今回の比較では、以下の結果が出た。このケースではそれほど大きな差が出なかった。\\
+	% また、今回は単一の図形のレンダリングのみなので、映像ではなく画像でレンダリング時の画面を掲示する。
+	
+	\newpage
+	\begin{minipage}[t]{0.4\textwidth}\vspace{0pt}
+		右記の箱ひげグラフの結果から、以下のようなことが言える
+		
+		\begin{enumerate}[parsep=-0.5\zh]
+			\item 箱ひげ自体に着目すると、大きな変化があるようには見受けられない
+			\item 赤色の図形(normal)と赤色の図形のWasm導入時（wasm_normal）では
+			一番時間がかかってしまう場合の時間が短縮されているが、それ以上の目立った違いが見受けられない
+			\item 虹色のもの場合は、一番時間がかかってしまうケースを比較した際、導入している方で実行時間が増えてしまっている。
+		\end{enumerate}
+	\end{minipage}
+	%------ 右側
+	\begin{minipage}[t]{0.6\textwidth}\vspace{0pt}
+		\begin{center}
+			\includegraphics[keepaspectratio, width=.9\linewidth,trim={0mm 0mm 0mm 0mm},clip]{box_chart.png}
+		\end{center}
+	\end{minipage}
 	\newpage
 	\item[考察]~\\
-	今回は単純な単色の図形、もしくは三色のグラデーションの図形のみ\\の描画であるため、大きな差にはならなかったと考えられる。\\しかし、2つの比較で、色のグラデーションを持つ三角形の方が\\高い速度差を示しているため、色の演算処理が増えた分の差が\\出ていると考えられる。そのため、より内部の数値処理を増やすと、\\より大きな差が生まれる可能性があると考えられる
+	% 今回は単純な単色の図形、もしくは三色のグラデーションの図形のみ\\の描画であるため、大きな差にはならなかったと考えられる。\\しかし、2つの比較で、色のグラデーションを持つ三角形の方が\\高い速度差を示しているため、色の演算処理が増えた分の差が\\出ていると考えられる。そのため、より内部の数値処理を増やすと、\\より大きな差が生まれる可能性があると考えられる
+	\begin{description}
+		\item[赤色三角形の場合]~\\
+		平均値や最大値のデータやグラフからは、単純かつ単色の図形のレンダリングであれば、高速化が見込める可能性があるように考えることができる。
+		\item[虹色三角形の場合]~\\
+		虹色三角形の場合は、平均値や最大値のデータやグラフから、\\むしろ遅くなってしまっていることがわかる。
+		\item[結果から]~\\
+		矩形自体のレンダリングに関しては高速化が可能であると考えられるが、
+		色に関する複雑な処理が入ってしまうと、むしろ減速してしまうため、
+		カラフルな描画対象を扱う状況にには不向きであると考えられる
+	\end{description}
+
 	
 \end{description}
 
@@ -232,8 +287,8 @@ WebAssembly側で処理するプログラムの対象として、
 \foilhead{\Large 5. むすび}\label{MUSUBI}
 \begin{itemize}
 	\item Web上でのグラフィクスレンダリングを高速化するため、WebAssemblyを用いたモジュールを作成した。
-	\item 現時点では、それほど大きな描画速度の差がないが、計算する数値が増えれば増えるほど、差が開いていく可能性があると考えられる。
-	\item 来月の報告までに、より計算量が多くなるプログラムで比較を行う
+	\item 現時点では、1つの図形しか描画していないため、それほど大きな描画速度の差がないが、描画物を増やしたらどう変化するのかを検証しようと考えている。
+	\item 来月の報告までに、図形の量を増やすことや、プログラム内容の質を高め、より負荷が高くなるプログラムで比較を行う
 \end{itemize}
 \newpage
 
